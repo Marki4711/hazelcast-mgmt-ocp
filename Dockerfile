@@ -5,8 +5,7 @@ USER root
 RUN mkdir ${HZ_HOME}config \
  && RUN chmod -R a+rw ${HZ_HOME}* 
  
-RUN groupadd -r hazelcast \
- && useradd -r -g hazelcast 
+RUN useradd -r hazelcast 
         
 # User default when running 
 USER hazelcast 
