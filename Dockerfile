@@ -3,7 +3,7 @@ FROM hazelcast/management-center:3.7.5
 USER root 
     
 RUN mkdir ${HZ_HOME}config \
- && RUN chmod -R a+rw ${HZ_HOME}* 
+ && chmod -R a+rw ${HZ_HOME}* 
  
 RUN useradd -r hazelcast 
         
