@@ -8,7 +8,7 @@ RUN mkdir ${HZ_HOME}config \
 RUN useradd -r hazelcast 
         
 # User default when running 
-USER hazelcast 
+useradd -r -G root hazelcast
 	  
 # Start hazelcast standalone server. 
 CMD java -Dhazelcast.mancenter.home=${HZ_HOME}config -jar mancenter-${HZ_VERSION}.war 
