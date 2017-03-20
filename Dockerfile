@@ -1,4 +1,4 @@
-FROM hazelcast/management-center:3.7.5 
+FROM hazelcast/management-center
   
 USER root 
     
